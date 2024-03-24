@@ -1,6 +1,7 @@
 ---
 import '../styles/styles.css';
 import SEO from './SEO.astro';
+import { GoogleAnalytics } from 'astro-analytics';
 
 export interface Props {
   title: string;
@@ -38,6 +39,8 @@ const { title } = Astro.props;
 			type="font/woff2"
 			crossorigin=""
 	  	/>
+
+		<GoogleAnalytics id="G-G2W4V6PSJE" />
 	</head>
 	<body>
 		<slot/>
